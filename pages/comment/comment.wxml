@@ -1,0 +1,16 @@
+<view class="container">
+<!-- 头部信息 -->
+  <view class="item-group" bindtap="onItemTagEvent">
+    <image src="{{thumbnail}}"></image>
+    <text class="item-tite">{{title}}</text>
+    <text class="item-rate">{{rate}}</text>
+  </view>
+<!-- 评论 -->
+  <view class="comment-title">全部影评（{{totalComment}}）</view>
+  <onecomment wx:for="{{comments}}" wx:key="index" item="{{item}}"></onecomment>
+<!-- 翻页 -->
+  <view class="page-btn-group">
+    <button class="page-btn" bindtap="onPrePageTap" disabled="{{start <= 1}}" loading="{{preloading}}">上一页</button>
+    <button class="page-btn" bindtap="onNextPageTap" loading="{{nextloading}}">下一页</button>
+  </view>
+</view>

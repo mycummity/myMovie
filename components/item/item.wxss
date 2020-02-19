@@ -1,0 +1,24 @@
+.items-item-navigator{
+  width: 200rpx;
+  display: inline-block;
+}
+.items-item-navigator .items-item-group{
+  width: 100%;
+}
+.items-item-navigator .items-item-group .items-item{
+  width: 100%;
+  height: 284rpx;
+}
+.items-item-navigator .items-item-group .items-item .items-item-img{
+  width: 100%;
+  height: 100%;
+}
+.items-item-navigator .items-item-group .items-item .items-item-title{
+  font-size: 32rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

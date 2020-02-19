@@ -1,0 +1,26 @@
+.items-group{
+  padding: 20rpx 0;
+}
+.items-group .items-top{
+  font-size: 36rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.items-group .items-top .items-title{
+  color: #494949;
+}
+.items-group .items-top .items-more{
+  color: #09A3E5;
+}
+.items-group .items-scroll-view{
+  width: 100%;
+  height: 410rpx;
+  margin-top: 40rpx;
+  white-space: nowrap;
+}
+.items-group .items-scroll-view item{
+  margin-right: 20rpx;
+}
+.items-group .items-scroll-view item:last-of-type{
+  margin-right: 0;
+}

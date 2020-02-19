@@ -1,0 +1,20 @@
+<searchbar></searchbar>
+<view class="container">
+<!-- 轮播 -->
+  <swiper class="swiper-group" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" circular="true">  
+    <block wx:for="{{imgUrls}}" wx:key="index">  
+      <swiper-item>  
+        <navigator url="/pages/detail/detail?id={{item.id}}" hover-class="navigator-hover">  
+          <image src="{{item.url}}" class="slide-image" /> 
+        </navigator>  
+      </swiper-item>  
+    </block>  
+  </swiper>
+
+  <!-- 列表 -->
+  <view class="list-group">
+    <items title="电影" items="{{movies}}" moreurl="/pages/list/list?type=movie" type="movie"></items>
+    <items title="电视剧" items="{{tvs}}" moreurl="/pages/list/list?type=tv" type="tv"></items>
+    <items title="综艺" items="{{shows}}" moreurl="/pages/list/list?type=show" type="show"></items>
+  </view>
+</view>

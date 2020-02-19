@@ -1,0 +1,34 @@
+<view class="container">
+<!-- 影片信息展示 -->
+  <view class="item-detail">
+    <view class="left-detail">
+      <image src="{{item.images.small}}"></image>
+    </view>
+    <view class="right-detail">
+      <view class="item-title">{{item.title}}</view>
+      <view class="item-actors">主演：{{actorNames}}</view>
+      <view class="item-directors">导演：{{item.directors[0].name}}</view>
+      <view class="item-type">分类：{{item.genres}}</view>
+      <view class="item-local">地区：{{item.countries}}</view>
+      <view class="item-date">日期：{{item.pubdates[0]}}</view>
+    </view>
+  </view>
+  <view class="item-gut">
+    <view class="item-gut-title">剧情简介</view>
+    {{item.summary}}
+  </view>
+  <!-- 标签 -->
+  <view class="item-tags">
+    <view class="item-tags-title">豆瓣成员常用标签</view>
+    <view class="item-tags-list">
+      <text wx:for="{{item.tags}}" wx:key="index">{{item}}</text>
+    </view>
+  </view>
+  <!-- 评论 -->
+  <view class="comment-list-group">
+    <view class="comment-title">短评（{{totalComment}}）</view>
+    <onecomment wx:for="{{comments}}" wx:key="index" item="{{item}}"></onecomment>  
+  </view>
+
+  <navigator class="more-comment" url="/pages/comment/comment?id={{id}}&thumbnail={{item.images.small}}&title={{item.title}}&rate={{item.rating.average}}">查看更多短评</navigator>
+</view>

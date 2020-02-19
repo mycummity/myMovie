@@ -1,0 +1,4 @@
+<searchbar isnavigator="{{true}}"></searchbar>
+<view class="container">
+  <item wx:for="{{items}}" wx:key="index" item="{{item}}" itemurl="/pages/detail/detail?id={{item.id}}"></item>
+</view>

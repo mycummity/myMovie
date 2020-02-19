@@ -1,0 +1,12 @@
+/* 轮播 */
+.swiper-group navigator{
+  height: 100%;
+}
+.swiper-group navigator .slide-image{
+  width: 100%;
+  height: 100%;
+}
+
+.list-group{
+  padding: 20rpx 0;
+}

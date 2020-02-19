@@ -1,0 +1,8 @@
+<view class="rate-group">
+  <image wx:for="{{lights}}" wx:key="index" style="width: {{startsize}}rpx;height: {{startsize}}rpx" src="/images/rate-light.jpg"></image>
+  <image wx:for="{{halfs}}" wx:key="index" style="width: {{startsize}}rpx;height: {{startsize}}rpx" src="/images/rate-half.jpg"></image>
+  <image wx:for="{{grays}}" wx:key="index" style="width: {{startsize}}rpx;height: {{startsize}}rpx" src="/images/rate-gray.jpg"></image>
+  <!-- 精灵图
+  <view class="rate-stars" style="width: {{startsize}}rpx;height: {{startsize}}rpx;background: url('/images/rates.png') 0 -{{pos}}rpx;background-size: 100%;"></view> -->
+  <text wx:if="{{istext}}" style="font-size: {{fontsize}}rpx;font-color: {{fontcolor}}">{{ratetext}}</text>
+</view>
